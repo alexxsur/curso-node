@@ -1,7 +1,13 @@
 // requireds
 const fs = require('fs');
+const colors = require('colors');
 
 let listarTabla = (base, limite = 10) => {
+
+    console.log('======================='.green);
+    console.log(`==== Tabla del ${ base } ===`.green);
+    console.log('======================='.green);
+
     if (!Number(base)) {
         reject(`El valor introducido base ${ base } no es un número`);
         return;
