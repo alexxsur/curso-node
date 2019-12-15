@@ -28,10 +28,6 @@ app.post('/usuario', function(req, res) {
             persona: body
         });
     }
-
-    res.json({
-        persona: body
-    })
 });
 
 app.put('/usuario/:id', function(req, res) {
